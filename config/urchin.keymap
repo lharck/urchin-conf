@@ -54,7 +54,7 @@
 			label = "Nav";
 			bindings = <
 			&trans     &kp N7     &kp N8    &kp N9     &kp INS         &kp COLON  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
-			HRML(CAPS      N4,        N5,       N6)    &kp DEL         &kp SEMI   HRMR(LARW, DARW,      UARW,      RARW)
+			HRML(CAPS,      N4,        N5,       N6)    &kp DEL         &kp SEMI   HRMR(LARW, DARW,      UARW,      RARW)
 			&trans     &kp N1     &kp N2    &kp N3     &trans          &trans     &trans     &trans     &trans     &trans
 							&kp N0     &kp ESC         &trans     &trans
 			>;
