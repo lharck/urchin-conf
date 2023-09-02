@@ -64,7 +64,7 @@
 			label = "Symb.";
 			bindings = <
 			&trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-			HRML(EXCL,     AT,        HASH,      DLLR), &kp PRCNT      &kp ASTRK  HRMR(MINUS,    EQUAL,     BSLH,      GRAVE)
+			HRML(EXCL,     AT,        HASH,      DLLR) &kp PRCNT      &kp ASTRK  HRMR(MINUS,    EQUAL,     BSLH,      GRAVE)
 			&trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
 							 &trans     &trans         &trans     &trans
 			>;
