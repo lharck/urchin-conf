@@ -4,6 +4,8 @@
 if SHIELD_URCHIN_DONGLE
 config ZMK_KEYBOARD_NAME
     default "urchin w. dongle"
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 endif
 
 if SHIELD_URCHIN_DONGLE || SHIELD_URCHIN_LEFT || SHIELD_URCHIN_RIGHT
