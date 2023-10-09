@@ -55,7 +55,27 @@
 			&kp Q      &kp W      &kp F      &kp P       &kp B           	&kp J      &kp L      &kp U      &kp Y      &kp APOS
 			HRML(A,        R,         S,         T)      &kp G           	&kp M      HRMR(N,        E,         I,        O)
 			&kp Z      &kp X      &kp C      &kp D       &kp V           	&kp K      &kp H      &kp COMMA  &kp DOT    &kp SEMI
-							 			  &lt 2 TAB   &kp ENTER       		&kp SPACE   &lt 1 BSPC
+							 			  &lt 4 TAB   &kp ENTER       		&kp SPACE   &lt 3 BSPC
+			>;
+		};
+
+	    gaming_base {
+			label = "GameBase";
+			bindings = <
+			&kp LALT   &kp Q &kp W &kp E &kp R        &trans &trans &trans &trans &trans   
+			&kp LSHIFT &kp A &kp S &kp D &kp F        &trans &trans &trans &trans &trans    
+			&kp LCTRL  &kp Z &kp X &kp C &kp V        &trans &trans &trans &trans &trans
+					   &lt 2 SPACE &lt 1 SPACE        &trans &trans
+			>;
+		};
+
+		gaming_alpha_2 {
+			label = "GameExt";
+			bindings = <
+			&kp T &kp Y &kp U &kp I &kp O        &trans &trans &trans &trans &trans   
+			&kp G &kp H &kp J &kp K &kp L         &trans &trans &trans &trans &trans    
+			&kp B &kp N &kp M &trans &kp P        &trans &trans &trans &trans &trans
+							  &trans &trans      &trans &trans
 			>;
 		};
 
@@ -86,26 +106,6 @@
 			&trans	    &kp F4     &kp F5     &kp F6    &kp F11        &trans     &kp LSHIFT   &kp LCTRL    &kp LALT     &kp LGUI    
 			&bootloader &kp F1     &kp F2     &kp F3    &kp F10        &trans     &trans    &kp K_VOL_DN    &kp K_VOL_UP &bootloader
 							  &trans    &trans         &trans     &trans
-			>;
-		};
-
-		gaming_base {
-			label = "GameBase";
-			bindings = <
-			&kp LALT   &kp Q &kp W &kp E &kp R        &trans &trans &trans &trans &trans   
-			&kp LSHIFT &kp A &kp S &kp D &kp F        &trans &trans &trans &trans &trans    
-			&kp LCTRL  &kp Z &kp X &kp C &kp V        &trans &trans &trans &trans &trans
-					   &lt 2 SPACE &lt 5 SPACE        &trans &trans
-			>;
-		};
-
-		gaming_alpha_2 {
-			label = "GameExt";
-			bindings = <
-			&kp T &kp Y &kp U &kp I &kp O        &trans &trans &trans &trans &trans   
-			&kp G &kp H &kp J &kp K &kp L         &trans &trans &trans &trans &trans    
-			&kp B &kp N &kp M &trans &kp P        &trans &trans &trans &trans &trans
-							  &trans &trans      &trans &trans
 			>;
 		};
 	};
