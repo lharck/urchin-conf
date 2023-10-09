@@ -42,7 +42,7 @@
         combo_gaming {
             timeout-ms = <50>;
             key-positions = <21 23>;
-            bindings = <&tog 4>;
+            bindings = <&tog 1>;
         };
     };
 
