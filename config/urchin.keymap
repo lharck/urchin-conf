@@ -14,7 +14,6 @@
 	ignore-modifiers;
 };
 
-
 / {
 	behaviors {
 		ht: hold_tap {
@@ -55,7 +54,7 @@
 			&kp Q      &kp W      &kp F      &kp P       &kp B           	&kp J      &kp L      &kp U      &kp Y      &kp APOS
 			HRML(A,        R,         S,         T)      &kp G           	&kp M      HRMR(N,        E,         I,        O)
 			&kp Z      &kp X      &kp C      &kp D       &kp V           	&kp K      &kp H      &kp COMMA  &kp DOT    &kp SEMI
-							 			  &lt 4 TAB   &kp ENTER       		&kp SPACE   &lt 3 BSPC
+							 			  &lt 4 TAB   &kp ENTER       		&kp SPACE  &lt 3 BSPC
 			>;
 		};
 
@@ -102,7 +101,7 @@
 		tri_layer {
 			label = "Sett.";
 			bindings = <
-			&trans      &kp F7     &kp F8     &kp F9    &kp F12        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   
+			&trans      &kp F7     &kp F8     &kp F9    &kp F12        &trans     &trans 	   &trans 		&trans 		 &trans   
 			&trans	    &kp F4     &kp F5     &kp F6    &kp F11        &trans     &kp LSHIFT   &kp LCTRL    &kp LALT     &kp LGUI    
 			&bootloader &kp F1     &kp F2     &kp F3    &kp F10        &trans     &trans    &kp K_VOL_DN    &kp K_VOL_UP &bootloader
 							  &trans    &trans         &trans     &trans
