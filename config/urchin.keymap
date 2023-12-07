@@ -31,17 +31,17 @@
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
 		layerThree {
-		if-layers = <1 2>;
-		then-layer = <3>;
+		if-layers = <3 4>;
+		then-layer = <5>;
 		};
 	};
 
 	 combos {
         compatible = "zmk,combos";
-        layerFour {
+        layerOne {
             timeout-ms = <50>;
             key-positions = <21 23>;
-            bindings = <&tog 4>;
+            bindings = <&tog 1>;
         };
     };
 
@@ -54,12 +54,32 @@
 			&kp Q      &kp W      &kp F      &kp P       &kp B           	&kp J      &kp L      &kp U      &kp Y      &kp APOS
 			HRML(A,        R,         S,         T)      &kp G           	&kp M      HRMR(N,        E,         I,        O)
 			&kp Z      &kp X      &kp C      &kp D       &kp V           	&kp K      &kp H      &kp COMMA  &kp DOT    &kp SEMI
-							 			  &lt 1 TAB   &kp ENTER       		&kp SPACE  &lt 2 BSPC
+							 			  &lt 3 TAB   &kp ENTER       		&kp SPACE  &lt 4 BSPC
 			>;
 		};
 
 		layerOne {
 			label = "one";
+			bindings = <
+			&kp LALT   &kp Q &kp W &kp E &kp R        &trans &trans &trans &trans &trans   
+			&kp LSHIFT &kp A &kp S &kp D &kp F        &trans &trans &trans &trans &trans    
+			&kp LCTRL  &kp Z &kp X &kp C &kp V        &trans &trans &trans &trans &trans
+					   &lt 2 SPACE &lt 3 SPACE        &trans &trans
+			>;
+		};
+
+		layerTwo {
+			label = "two";
+			bindings = <
+			&kp T &kp Y &kp U &kp I &kp O        &trans &trans &trans &trans &trans   
+			&kp G &kp H &kp J &kp K &kp L         &trans &trans &trans &trans &trans    
+			&kp B &kp N &kp M &trans &kp P        &trans &trans &trans &trans &trans
+							  &trans &trans      &trans &trans
+			>;
+		};
+
+		layerThree {
+			label = "three";
 			bindings = <
 			&kp ESC     &kp N7     &kp N8    &kp N9    &kp INS  		  &trans  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
 			HRML(CAPS,     N4,        N5,       N6)    &kp DEL    		  &trans  &kp LARW   &kp DARW   &kp UARW   &kp RARW
@@ -68,8 +88,8 @@
 			>;
 		};
 
-	    layerTwo {
-			label = "two";
+	    layerFour {
+			label = "four";
 			bindings = <
 			&kp GRAVE    &kp LBKT   &kp LBRC   &kp RBRC   &kp DOLLAR    		 &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp PERCENT
 			HRML(STAR,       MINUS,     PLUS,      EQUAL) &kp TILDE     		 &trans    HRMR(AMPS,     PIPE,       EXCL,      QMARK)
@@ -78,33 +98,13 @@
 			>;
 		};
 
-		layerThree {
-			label = "three";
-			bindings = <
-			&trans      &kp F7     &kp F8     &kp F9    &kp F12        &trans     &trans 	   &trans 		&trans 		 &trans   
-			&trans	    &kp F4     &kp F5     &kp F6    &kp F11        &trans     &kp LSHIFT   &kp LCTRL    &kp LALT     &kp LGUI    
-			&bootloader &kp F1     &kp F2     &kp F3    &kp F10        &trans     &trans    &kp K_VOL_DN    &kp K_VOL_UP &bootloader
-							 				   &trans    &trans         &trans     &trans
-			>;
-		};
-
-		layerFour {
-			label = "four";
-			bindings = <
-			&kp LALT   &kp Q &kp W &kp E &kp R        &trans &trans &trans &trans &trans   
-			&kp LSHIFT &kp A &kp S &kp D &kp F        &trans &trans &trans &trans &trans    
-			&kp LCTRL  &kp Z &kp X &kp C &kp V        &trans &trans &trans &trans &trans
-					   &lt 5 SPACE &lt 2 DOLLAR        &trans &trans
-			>;
-		};
-
 		layerFive {
 			label = "five";
 			bindings = <
-			&kp T &kp Y &kp U &kp I &kp O        &trans &trans &trans &trans &trans   
-			&kp G &kp H &kp J &kp K &kp L         &trans &trans &trans &trans &trans    
-			&kp B &kp N &kp M &trans &kp P        &trans &trans &trans &trans &trans
-							  &trans &trans      &trans &trans
+			&trans      &kp F7     &kp F8     &kp F9    &kp F12        &trans     &trans 	   &trans 		&trans 		 &trans   
+			&trans	    &kp F4     &kp F5     &kp F6    &kp F11        &trans     &kp LSHIFT   &kp LCTRL    &kp LALT     &kp LGUI    
+			&trans 		&kp F1 	   &kp F2     &kp F3    &kp F10   	   &trans     &trans       &kp C_VOL_DN &kp C_VOL_UP &trans
+							 				  &trans    &trans        &trans     &trans
 			>;
 		};
 	};
