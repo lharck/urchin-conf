@@ -78,8 +78,8 @@
 	    right_layer {
 			bindings = <
 			&kp GRAVE    &kp LBKT   &kp LBRC   &kp RBRC   &kp DOLLAR    		 &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp PERCENT
-			HRML(STAR,       MINUS,     PLUS,      EQUAL) &kp TILDE     		 &trans    HRMR(AMPS,     PIPE,       EXCL,      APOS)
-			&kp HASH     &kp UNDER  &kp AT     &kp trans    &kp BSLH      		 &trans    &trans  	      &trans      &trans     &trans
+			HRML(STAR,   MINUS,     PLUS,      EQUAL) 	  &kp TILDE     		 &trans    HRMR(AMPS,     PIPE,       EXCL,      APOS)
+			&kp HASH     &kp UNDER  &kp AT     &trans     &kp BSLH      		 &trans    &trans  	      &trans      &trans     &trans
 							 						  &trans &trans       		 &trans    &trans
 			>;
 		};
