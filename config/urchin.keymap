@@ -50,9 +50,9 @@
 
 		default_layer {
 			bindings = <
-			&kp Q      &kp W      &kp F      &kp P       &kp B           	&kp J      &kp L      &kp U      &kp Y      &kp APOS
-			HRML(A,        R,         S,         T)      &kp G           	&kp M      HRMR(N,        E,         I,        O)
-			&kp Z      &kp X      &kp C      &kp D       &kp V           	&kp K      &kp H      &kp COMMA  &kp DOT    &kp SEMI
+			&kp Q      &kp W      &kp E      &kp R       &kp T           	&kp Y      &kp U      &kp I      &kp O      &kp P
+			HRML(A,        S,         D,         F)      &kp G           	&kp H      HRMR(J,        K,         L,        SEMI)
+			&kp Z      &kp X      &kp C      &kp V       &kp B           	&kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH
 							 			  &lt 4 TAB   &kp ENTER       		&kp SPACE   &lt 3 BSPC
 			>;
 		};
@@ -78,8 +78,8 @@
 	    right_layer {
 			bindings = <
 			&kp GRAVE    &kp LBKT   &kp LBRC   &kp RBRC   &kp DOLLAR    		 &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp PERCENT
-			HRML(STAR,       MINUS,     PLUS,      EQUAL) &kp TILDE     		 &trans    HRMR(AMPS,     PIPE,       EXCL,      QMARK)
-			&kp HASH     &kp UNDER  &kp AT     &kp FSLH    &kp BSLH      		 &trans    &trans  	      &trans      &trans     &trans
+			HRML(STAR,       MINUS,     PLUS,      EQUAL) &kp TILDE     		 &trans    HRMR(AMPS,     PIPE,       EXCL,      APOS)
+			&kp HASH     &kp UNDER  &kp AT     &kp trans    &kp BSLH      		 &trans    &trans  	      &trans      &trans     &trans
 							 						  &trans &trans       		 &trans    &trans
 			>;
 		};
