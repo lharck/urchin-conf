@@ -26,15 +26,15 @@
 			bindings = <&kp>, <&kp>;
 		};
 
-
+		lt {
+			tapping-term-ms = <200>;
+			flavor = "tap-preferred";
+			global-quick-tap;
+		};
 	};
 
-	&lt {
-		tapping-term-ms = <200>;
-		flavor = "tap-preferred";
-		global-quick-tap;
-	};
-	
+
+
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
 		layerThree {
